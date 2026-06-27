@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a HTF Digital. Solicite um orçamento para criação de sites, SEO, tráfego pago, identidade visual e social media.">
+  <title>Contato — HTF Digital</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="HTF Digital - Página inicial">
+        <span class="header__logo-text">HTF Digital</span>
+      </a>
+
+      <button class="header__hamburger" id="hamburgerBtn" aria-label="Abrir menu de navegação" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="header__nav" id="mainNav" role="navigation" aria-label="Menu principal">
+        <ul class="header__menu">
+          <li><a href="index.html" class="header__link">Home</a></li>
+          <li class="header__dropdown">
+            <a href="index.html#servicos" class="header__link header__link--dropdown">
+              Serviços <i class="fas fa-chevron-down"></i>
+            </a>
+            <ul class="header__dropdown-menu">
+              <li><a href="criacao-de-sites.html">Criação de Sites</a></li>
+              <li><a href="trafego-pago.html">Tráfego Pago</a></li>
+              <li><a href="seo.html">SEO</a></li>
+              <li><a href="copywritting.html">Copywriting</a></li>
+              <li><a href="identidade-visual.html">Identidade Visual</a></li>
+              <li><a href="social-media.html">Social Media</a></li>
+            </ul>
+          </li>
+          <li><a href="quem-somos.html" class="header__link">Sobre</a></li>
+          <li><a href="contato.html" class="header__link header__link--active">Contato</a></li>
+        </ul>
+        <a href="contato.html" class="btn btn--primary header__cta">Orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero" aria-label="Contato">
+    <div class="container page-hero__inner">
+      <span class="badge">CONTATO</span>
+      <h1 class="page-hero__title">Vamos Conversar?</h1>
+      <p class="page-hero__subtitle">
+        Solicite um orçamento ou tire suas dúvidas. Respondemos em até 24 horas.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section class="contact" aria-labelledby="contact-title-page">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+
+        <!-- Formulário -->
+        <div>
+          <h2 id="contact-title-page" class="section__title" style="margin-bottom: 0.5rem;">Solicite um Orçamento</h2>
+          <p style="color: #94a3b8; margin-bottom: 2rem; font-size: 0.95rem;">
+            Preencha o formulário abaixo e entraremos em contato.
+          </p>
+
+          <form class="contact__form" id="contactForm" action="#" method="POST">
+            <div class="form__group">
+              <label for="formNome">Nome</label>
+              <input type="text" id="formNome" name="nome" placeholder="Seu nome completo" required>
+            </div>
+            <div class="form__group">
+              <label for="formEmail">E-mail</label>
+              <input type="email" id="formEmail" name="email" placeholder="seu@email.com" required>
+            </div>
+            <div class="form__group">
+              <label for="formTelefone">Telefone</label>
+              <input type="tel" id="formTelefone" name="telefone" placeholder="(31) 99999-9999">
+            </div>
+            <div class="form__group">
+              <label for="formServico">Serviço de Interesse</label>
+              <select id="formServico" name="servico" style="width: 100%; padding: 0.9rem 1.1rem; background-color: #1e293b; border: 1px solid rgba(148, 163, 184, 0.15); border-radius: 10px; color: #f1f5f9; font-family: 'Inter', sans-serif; font-size: 0.95rem; outline: none; transition: border-color 0.3s ease; appearance: none; cursor: pointer;">
+                <option value="">Selecione um serviço</option>
+                <option value="Criação de Sites">Criação de Sites</option>
+                <option value="Tráfego Pago">Tráfego Pago</option>
+                <option value="SEO">SEO</option>
+                <option value="Copywriting">Copywriting</option>
+                <option value="Identidade Visual">Identidade Visual</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="formMensagem">Mensagem</label>
+              <textarea id="formMensagem" name="mensagem" rows="5" placeholder="Conte-nos sobre seu projeto..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg">Enviar Mensagem</button>
+          </form>
+        </div>
+
+        <!-- Informações de contato -->
+        <div>
+          <h2 style="font-size: 1.5rem; font-weight: 700; color: #f1f5f9; margin-bottom: 1.5rem;">Informações de Contato</h2>
+
+          <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2.5rem;">
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div style="width: 48px; height: 48px; background-color: rgba(6, 182, 212, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #06b6d4; flex-shrink: 0;">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h3 style="font-size: 0.9rem; font-weight: 600; color: #f1f5f9; margin-bottom: 0.25rem;">E-mail</h3>
+                <a href="mailto:luizhtf@outlook.com" style="color: #94a3b8; font-size: 0.95rem; transition: color 0.3s ease;">luizhtf@outlook.com</a>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div style="width: 48px; height: 48px; background-color: rgba(6, 182, 212, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #06b6d4; flex-shrink: 0;">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h3 style="font-size: 0.9rem; font-weight: 600; color: #f1f5f9; margin-bottom: 0.25rem;">Telefone / WhatsApp</h3>
+                <a href="https://w.app/htfdigital" style="color: #94a3b8; font-size: 0.95rem; transition: color 0.3s ease;">(31) 97221-7324</a>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div style="width: 48px; height: 48px; background-color: rgba(6, 182, 212, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #06b6d4; flex-shrink: 0;">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h3 style="font-size: 0.9rem; font-weight: 600; color: #f1f5f9; margin-bottom: 0.25rem;">Horário de Atendimento</h3>
+                <p style="color: #94a3b8; font-size: 0.95rem;">Atendimento 24h</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA direto -->
+          <a href="https://w.app/htfdigital" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg" style="width: 100%;">
+            <i class="fab fa-whatsapp"></i> Fale pelo WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta" aria-labelledby="cta-title-contato">
+    <div class="container cta__inner">
+      <h2 class="cta__title" id="cta-title-contato">Vamos Transformar Sua Presença Digital?</h2>
+      <p class="cta__text">
+        Entre em contato para solicitar um orçamento e descubra como podemos fortalecer sua marca através de soluções digitais estratégicas e profissionais.
+      </p>
+      <a href="contato.html" class="btn btn--primary btn--lg">Quero fazer orçamento</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">HTF Digital</a>
+        <p class="footer__description">
+          Transforme sua presença digital com a HTF Digital. Criamos sites modernos, estratégias de SEO, identidade visual e soluções de marketing pensadas para destacar sua marca, atrair clientes e gerar resultados reais. Sua visão, nossa estratégia.
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <h4>Acesso Rápido</h4>
+        <ul>
+          <li><a href="criacao-de-sites.html">Criação de Sites</a></li>
+          <li><a href="trafego-pago.html">Tráfego Pago</a></li>
+          <li><a href="seo.html">SEO</a></li>
+          <li><a href="copywritting.html">Copywriting</a></li>
+          <li><a href="identidade-visual.html">Identidade Visual</a></li>
+          <li><a href="social-media.html">Social Media</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <h4>Entre em Contato</h4>
+        <ul>
+          <li><a href="mailto:luizhtf@outlook.com"><i class="fas fa-envelope"></i> luizhtf@outlook.com</a></li>
+          <li><a href="tel:+5531972217324"><i class="fas fa-phone"></i> (31) 97221-7324</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; HTF Digital, todos os direitos reservados.</p>
+        <a href="politica-privacidade.html">Política de Privacidade</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

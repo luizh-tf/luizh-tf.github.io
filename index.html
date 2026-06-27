@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO PRIMÁRIO -->
+  <title>HTF Digital — Soluções Digitais Para Sua Marca</title>
+  <meta name="description" content="HTF Digital: desenvolvimento de websites, identidade visual, SEO, tráfego pago, copywriting e social media. Soluções digitais estratégicas para fortalecer sua marca online.">
+  <meta name="keywords" content="marketing digital, criação de sites, SEO, identidade visual, tráfego pago, copywriting, social media, HTF Digital">
+  <meta name="author" content="HTF Digital">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://luizhtf.com/">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HTF Digital — Soluções Digitais Para Sua Marca">
+  <meta property="og:description" content="Desenvolvimento de websites, identidade visual e estratégias digitais criadas para fortalecer sua presença online.">
+  <meta property="og:url" content="https://luizhtf.com/">
+  <meta property="og:site_name" content="HTF Digital">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- TWITTER CARDS -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HTF Digital — Soluções Digitais Para Sua Marca">
+  <meta name="twitter:description" content="Desenvolvimento de websites, identidade visual e estratégias digitais criadas para fortalecer sua presença online.">
+
+  <!-- SCHEMA.ORG JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "HTF Digital",
+    "description": "Soluções digitais para marcas: websites, SEO, identidade visual, tráfego pago, copywriting e social media.",
+    "url": "https://luizhtf.com/",
+    "email": "luizhtf@outlook.com",
+    "areaServed": "BR",
+    "priceRange": "$$",
+    "serviceType": [
+      "Criação de Sites",
+      "SEO",
+      "Identidade Visual",
+      "Tráfego Pago",
+      "Copywriting",
+      "Social Media"
+    ]
+  }
+  </script>
+
+  <!-- GOOGLE FONTS: Inter + Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== SCROLL PROGRESS BAR ===== -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===== HEADER / NAVEGAÇÃO ===== -->
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="HTF Digital - Página inicial">
+        <span class="header__logo-text">HTF Digital</span>
+      </a>
+
+      <button class="header__hamburger" id="hamburgerBtn" aria-label="Abrir menu de navegação" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Overlay do menu mobile -->
+      <div class="header__overlay" id="menuOverlay" aria-hidden="true"></div>
+
+      <nav class="header__nav" id="mainNav" role="navigation" aria-label="Menu principal">
+        <ul class="header__menu">
+          <li><a href="#hero" class="header__link header__link--active">Home</a></li>
+          <li class="header__dropdown">
+            <a href="#servicos" class="header__link header__link--dropdown">
+              Serviços <i class="fas fa-chevron-down"></i>
+            </a>
+            <ul class="header__dropdown-menu">
+              <li><a href="criacao-de-sites.html">Criação de Sites</a></li>
+              <li><a href="trafego-pago.html">Tráfego Pago</a></li>
+              <li><a href="seo.html">SEO</a></li>
+              <li><a href="copywritting.html">Copywriting</a></li>
+              <li><a href="identidade-visual.html">Identidade Visual</a></li>
+              <li><a href="social-media.html">Social Media</a></li>
+            </ul>
+          </li>
+          <li><a href="quem-somos.html" class="header__link">Sobre</a></li>
+          <li><a href="contato.html" class="header__link">Contato</a></li>
+        </ul>
+        <a href="#contato" class="btn btn--primary header__cta">Orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero" aria-label="Seção principal de apresentação">
+    <!-- Mesh gradient background -->
+    <div class="hero__mesh" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="hero__tagline">Agência digital</span>
+        <h1 class="hero__title">
+          Soluções <span class="gradient-text">Digitais</span><br>
+          Para Sua Marca
+        </h1>
+        <p class="hero__subtitle">
+          Desenvolvimento de websites, identidade visual e estratégias digitais criadas para fortalecer sua presença online com profissionalismo, clareza e posicionamento.
+        </p>
+        <div class="hero__actions">
+          <a href="contato.html" class="btn btn--primary btn--lg">Fale Conosco</a>
+          <a href="#servicos" class="btn btn--ghost btn--lg">
+            Ver Serviços <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Role</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== CLIENTES / LOGOS (prova social) ===== -->
+  <!-- <section class="social-proof" aria-label="Marcas que confiam">
+    <div class="container">
+      <p class="social-proof__label">Empresas que transformaram sua presença digital</p>
+      <div class="social-proof__track">
+        <div class="social-proof__logos">
+          <span class="social-proof__logo">Marca 1</span>
+          <span class="social-proof__logo">Marca 2</span>
+          <span class="social-proof__logo">Marca 3</span>
+          <span class="social-proof__logo">Marca 4</span>
+          <span class="social-proof__logo">Marca 5</span>
+          <span class="social-proof__logo">Marca 6</span>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ===== QUEM SOMOS ===== -->
+  <section class="about section-reveal" id="sobre" aria-labelledby="about-title">
+    <div class="container">
+      <span class="badge">QUEM SOMOS</span>
+      <h2 class="section__title" id="about-title">Estratégia, Design e Presença Digital</h2>
+      <p class="about__description">
+        Desenvolvemos soluções digitais que unem três pilares essenciais: <strong>estratégia</strong>, <strong>design</strong> e <strong>posicionamento</strong> para fortalecer marcas no online. Nosso foco está em criar experiências visuais modernas, profissionais e alinhadas aos objetivos de cada projeto, sempre com atenção aos detalhes, clareza e performance.
+      </p>
+
+      <div class="about__grid">
+        <article class="about__card card-reveal">
+          <div class="about__icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Missão</h3>
+          <p>Desenvolver soluções digitais estratégicas que fortaleçam marcas através de design, posicionamento e presença digital.</p>
+        </article>
+        <article class="about__card card-reveal">
+          <div class="about__icon"><i class="fas fa-eye"></i></div>
+          <h3>Visão</h3>
+          <p>Ser referência em soluções digitais modernas, criando marcas mais profissionais, relevantes e bem posicionadas no mercado.</p>
+        </article>
+        <article class="about__card card-reveal">
+          <div class="about__icon"><i class="fas fa-handshake"></i></div>
+          <h3>Valores</h3>
+          <p>Atuar com criatividade, profissionalismo e transparência, desenvolvendo projetos com estratégia, consistência e atenção aos detalhes.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVIÇOS ===== -->
+  <section class="services section-reveal" id="servicos" aria-labelledby="services-title">
+    <div class="container">
+      <span class="badge">NOSSOS SERVIÇOS</span>
+      <h2 class="section__title" id="services-title">Transformando Marcas Através do Digital</h2>
+      <p class="section__subtitle">Soluções digitais desenvolvidas para fortalecer marcas através de estratégia, design e presença online.</p>
+
+      <div class="services__grid">
+        <article class="service__card card-reveal">
+          <div class="service__icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Criação de Sites</h3>
+          <p>Websites modernos e responsivos desenvolvidos para criar uma presença digital profissional da sua marca.</p>
+          <a href="criacao-de-sites.html" class="service__link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service__card card-reveal">
+          <div class="service__icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Estratégias de SEO</h3>
+          <p>Estratégias de otimização focadas em posicionamento, visibilidade e tráfego qualificado no Google.</p>
+          <a href="seo.html" class="service__link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service__card card-reveal">
+          <div class="service__icon"><i class="fas fa-share-alt"></i></div>
+          <h3>Social Media</h3>
+          <p>Conteúdos e estratégias digitais desenvolvidos para aumentar autoridade e gerar conexão com seu público.</p>
+          <a href="social-media.html" class="service__link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service__card card-reveal">
+          <div class="service__icon"><i class="fas fa-ad"></i></div>
+          <h3>Tráfego Pago</h3>
+          <p>Campanhas estratégicas em Google Ads, Meta Ads e TikTok Ads com foco em performance, alcance e conversão.</p>
+          <a href="trafego-pago.html" class="service__link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service__card card-reveal">
+          <div class="service__icon"><i class="fas fa-palette"></i></div>
+          <h3>Identidade Visual</h3>
+          <p>Identidades visuais modernas e consistentes desenvolvidas para transmitir profissionalismo e reconhecimento.</p>
+          <a href="identidade-visual.html" class="service__link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service__card card-reveal">
+          <div class="service__icon"><i class="fas fa-feather-alt"></i></div>
+          <h3>Copywriting</h3>
+          <p>Textos estratégicos e persuasivos desenvolvidos para fortalecer seu posicionamento e presença digital.</p>
+          <a href="copywritting.html" class="service__link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIFERENCIAIS ===== -->
+  <section class="differentials section-reveal" aria-labelledby="diff-title">
+    <div class="container">
+      <span class="badge">POR QUE NOS ESCOLHER</span>
+      <h2 class="section__title" id="diff-title">Estratégia, Performance e Presença Digital</h2>
+
+      <div class="differentials__grid">
+        <div class="differential__item card-reveal">
+          <div class="diff__icon"><i class="fas fa-pencil-ruler"></i></div>
+          <h3>Estratégia Personalizada</h3>
+          <p>Projetos desenvolvidos de forma estratégica e personalizada, alinhando posicionamento, design e objetivos do negócio.</p>
+        </div>
+        <div class="differential__item card-reveal">
+          <div class="diff__icon"><i class="fas fa-rocket"></i></div>
+          <h3>Foco em Performance</h3>
+          <p>Soluções digitais desenvolvidas com foco em experiência, conversão e crescimento da sua presença online.</p>
+        </div>
+        <div class="differential__item card-reveal">
+          <div class="diff__icon"><i class="fas fa-headset"></i></div>
+          <h3>Atendimento Próximo</h3>
+          <p>Comunicação clara, acompanhamento transparente e suporte próximo durante todas as etapas do projeto.</p>
+        </div>
+        <div class="differential__item card-reveal">
+          <div class="diff__icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Design Moderno e Profissional</h3>
+          <p>Layouts modernos, sofisticados e responsivos que fortalecem a credibilidade da sua empresa em qualquer dispositivo.</p>
+        </div>
+        <div class="differential__item card-reveal">
+          <div class="diff__icon"><i class="fas fa-cubes"></i></div>
+          <h3>Soluções Completas</h3>
+          <p>Websites, identidade visual e estratégias digitais desenvolvidas para criar uma presença online sólida e consistente.</p>
+        </div>
+        <div class="differential__item card-reveal">
+          <div class="diff__icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>Decisões Baseadas em Dados</h3>
+          <p>Estratégias orientadas por métricas e análise de dados para otimizar resultados e identificar oportunidades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta section-reveal" aria-labelledby="cta-title">
+    <div class="container cta__inner">
+      <h2 class="cta__title" id="cta-title">Vamos Transformar Sua Presença Digital?</h2>
+      <p class="cta__text">
+        Entre em contato para solicitar um orçamento e descubra como podemos fortalecer sua marca através de soluções digitais estratégicas e profissionais.
+      </p>
+      <a href="#contato" class="btn btn--primary btn--lg">Quero fazer orçamento</a>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO / FORMULÁRIO ===== -->
+  <section class="contact section-reveal" id="contato" aria-labelledby="contact-title">
+    <div class="container">
+      <span class="badge">CONTATO</span>
+      <h2 class="section__title" id="contact-title">Solicite um Orçamento</h2>
+
+      <form class="contact__form" id="contactForm" action="#" method="POST" novalidate>
+        <div class="form__group">
+          <label for="formNome">Nome</label>
+          <input type="text" id="formNome" name="nome" placeholder="Seu nome completo" required autocomplete="name">
+          <span class="form__error" role="alert"></span>
+        </div>
+        <div class="form__group">
+          <label for="formEmail">E-mail</label>
+          <input type="email" id="formEmail" name="email" placeholder="seu@email.com" required autocomplete="email">
+          <span class="form__error" role="alert"></span>
+        </div>
+        <div class="form__group">
+          <label for="formTelefone">Telefone</label>
+          <input type="tel" id="formTelefone" name="telefone" placeholder="(31) 99999-9999" autocomplete="tel">
+          <span class="form__error" role="alert"></span>
+        </div>
+        <div class="form__group">
+          <label for="formMensagem">Mensagem</label>
+          <textarea id="formMensagem" name="mensagem" rows="5" placeholder="Conte-nos sobre seu projeto..." required></textarea>
+          <span class="form__error" role="alert"></span>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">HTF Digital</a>
+        <p class="footer__description">
+          Transforme sua presença digital com a HTF Digital. Criamos sites modernos, estratégias de SEO, identidade visual e soluções de marketing digital para fortalecer sua marca.
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="criacao-de-sites.html">Criação de Sites</a></li>
+          <li><a href="seo.html">SEO</a></li>
+          <li><a href="trafego-pago.html">Tráfego Pago</a></li>
+          <li><a href="copywritting.html">Copywriting</a></li>
+          <li><a href="identidade-visual.html">Identidade Visual</a></li>
+          <li><a href="social-media.html">Social Media</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:luizhtf@outlook.com"><i class="fas fa-envelope"></i> luizhtf@outlook.com</a></li>
+          <li><a href="https://w.app/htfdigital"><i class="fas fa-phone"></i> (31) 97221-7324</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 HTF Digital. Todos os direitos reservados.</p>
+        <a href="#hero" class="footer__back-top" aria-label="Voltar ao topo">
+          <i class="fas fa-arrow-up"></i> Voltar ao topo
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING CTA (mobile) ===== -->
+  <a href="#contato" class="floating-cta" aria-label="Solicitar orçamento">
+    <i class="fas fa-comment-dots"></i>
+    <span>Orçamento</span>
+  </a>
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
+</body>
+</html>
