@@ -6,24 +6,32 @@
 
 /* ===== CSS CUSTOM PROPERTIES ===== */
 :root {
-  --cyan: #06b6d4;
-  --cyan-light: #22d3ee;
-  --cyan-dark: #0891b2;
-  --violet: #8b5cf6;
-  --violet-light: #a78bfa;
-  --amber: #f59e0b;
-  --slate-900: #0f172a;
+  /* 🔵 NOVA PALETA HTF DIGITAL */
+  --electric-teal: #0EA5E9;
+  --electric-teal-light: #38BDF8;
+  --electric-teal-dark: #0284C7;
+  --gold: #F59E0B;
+  --gold-light: #FBBF24;
   --slate-950: #020617;
-  --slate-800: #1e293b;
+  --slate-900: #0F172A;  /* Deep Navy (já existe) */
+  --slate-800: #1E293B;
   --slate-700: #334155;
-  --slate-400: #94a3b8;
-  --slate-500: #64748b;
-  --slate-300: #cbd5e1;
-  --white: #f1f5f9;
-  --gradient-primary: linear-gradient(135deg, #06b6d4, #8b5cf6);
-  --gradient-cta: linear-gradient(135deg, #06b6d4, #22d3ee);
+  --slate-500: #64748B;
+  --slate-400: #94A3B8;
+  --slate-300: #CBD5E1;
+  --white: #F1F5F9;      /* Warm White */
+
+  /* Gradientes atualizados */
+  --gradient-primary: linear-gradient(135deg, #0EA5E9, #38BDF8);
+  --gradient-cta: linear-gradient(135deg, #0EA5E9, #38BDF8);
+  --gradient-accent: linear-gradient(135deg, #F59E0B, #FBBF24);
+
+  /* Sombras */
   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.15);
   --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.25);
+  --shadow-teal: 0 8px 30px rgba(14, 165, 233, 0.35);
+  --shadow-gold: 0 8px 30px rgba(245, 158, 11, 0.3);
+
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
@@ -73,7 +81,7 @@ ul {
 }
 
 ::selection {
-  background-color: rgba(6, 182, 212, 0.3);
+  background-color: rgba(14, 165, 233, 0.3);
   color: var(--white);
 }
 
@@ -137,7 +145,7 @@ ul {
 
 .btn--primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(6, 182, 212, 0.35);
+  box-shadow: 0 8px 30px rgba(14, 165, 233, 0.35);
 }
 
 .btn--ghost {
@@ -147,8 +155,8 @@ ul {
 }
 
 .btn--ghost:hover {
-  border-color: var(--cyan);
-  color: var(--cyan);
+  border-color: var(--electric-teal);
+  color: var(--electric-teal);
   transform: translateY(-3px);
 }
 
@@ -160,8 +168,8 @@ ul {
 /* ===== BADGE ===== */
 .badge {
   display: inline-block;
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.12), rgba(139, 92, 246, 0.12));
-  color: var(--cyan);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(251, 191, 36, 0.12));
+  color: var(--gold);
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -169,7 +177,7 @@ ul {
   padding: 0.4rem 1rem;
   border-radius: 100px;
   margin-bottom: 1rem;
-  border: 1px solid rgba(6, 182, 212, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.15);
 }
 
 /* ===== GRADIENT TEXT ===== */
@@ -247,15 +255,19 @@ section {
 .header__logo-text:hover {
   opacity: 0.85;
 }
+.header__logo-text:hover::before,
+.header__logo-text:hover::after {
+  color: var(--gold);
+}
 
 .header__logo-text::before {
   content: '<';
-  color: var(--cyan);
+  color: var(--electric-teal);
 }
 
 .header__logo-text::after {
   content: '/>';
-  color: var(--cyan);
+  color: var(--electric-teal);
 }
 
 .header__nav {
@@ -376,7 +388,7 @@ section {
 }
 
 .header__hamburger:hover {
-  color: var(--cyan);
+  color: var(--electric-teal);
 }
 
 /* Overlay do menu mobile */
@@ -431,14 +443,14 @@ section {
   display: inline-block;
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--cyan);
+  color: var(--gold);
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 1.25rem;
   padding: 0.35rem 1rem;
-  border: 1px solid rgba(6, 182, 212, 0.2);
+  border: 1px solid rgba(245, 158, 11, 0.2);
   border-radius: 100px;
-  background: rgba(6, 182, 212, 0.06);
+  background: rgba(245, 158, 11, 0.06);
 }
 
 .hero__title {
@@ -559,7 +571,7 @@ section {
 }
 
 .about__description strong {
-  color: var(--cyan);
+  color: var(--electric-teal);
   font-weight: 600;
 }
 
@@ -598,21 +610,21 @@ section {
 
 .about__card:hover {
   transform: translateY(-6px);
-  border-color: rgba(6, 182, 212, 0.15);
+  border-color: rgba(14, 165, 233, 0.15);
   box-shadow: var(--shadow-hover);
 }
 
 .about__icon {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.12), rgba(139, 92, 246, 0.12));
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.12), rgba(56, 189, 248, 0.12));
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.25rem;
   font-size: 1.5rem;
-  color: var(--cyan);
+  color: var(--electric-teal);
   transition: transform var(--transition);
 }
 
@@ -674,20 +686,20 @@ section {
 
 .service__card:hover {
   transform: translateY(-6px);
-  border-color: rgba(6, 182, 212, 0.15);
+  border-color: rgba(14, 165, 233, 0.15);
   box-shadow: var(--shadow-hover);
 }
 
 .service__icon {
   width: 56px;
   height: 56px;
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.12), rgba(139, 92, 246, 0.12));
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.12), rgba(56, 189, 248, 0.12));
   border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
-  color: var(--cyan);
+  color: var(--electric-teal);
   margin-bottom: 1.25rem;
   transition: transform var(--transition);
 }
@@ -711,7 +723,7 @@ section {
 }
 
 .service__link {
-  color: var(--cyan);
+  color: var(--electric-teal);
   font-weight: 600;
   font-size: 0.9rem;
   display: inline-flex;
@@ -722,7 +734,7 @@ section {
 
 .service__link:hover {
   gap: 0.8rem;
-  color: var(--cyan-light);
+  color: var(--electric-teal-light);
 }
 
 /* ============================================
@@ -763,13 +775,13 @@ section {
 .diff__icon {
   width: 52px;
   height: 52px;
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.12), rgba(139, 92, 246, 0.12));
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.12), rgba(56, 189, 248, 0.12));
   border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
-  color: var(--cyan);
+  color: var(--electric-teal);
   margin: 0 auto 1rem;
   transition: transform var(--transition);
 }
@@ -871,8 +883,8 @@ section {
 
 .form__group input:focus,
 .form__group textarea:focus {
-  border-color: var(--cyan);
-  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.12), 0 0 20px rgba(6, 182, 212, 0.05);
+  border-color: var(--electric-teal);
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.12), 0 0 20px rgba(6, 182, 212, 0.05);
 }
 
 .form__group input.input--error,
@@ -915,7 +927,7 @@ section {
   font-size: 0.9rem;
   gap: 0.5rem;
   align-items: center;
-  box-shadow: 0 8px 30px rgba(6, 182, 212, 0.35);
+  box-shadow: 0 8px 30px rgba(14, 165, 233, 0.35);
   transition: all var(--transition);
   border: none;
   cursor: pointer;
@@ -1032,20 +1044,20 @@ section {
 
 .mvv__card:hover {
   transform: translateY(-4px);
-  border-color: rgba(6, 182, 212, 0.15);
+  border-color: rgba(14, 165, 233, 0.15);
   box-shadow: var(--shadow-hover);
 }
 
 .mvv__icon {
   width: 56px;
   height: 56px;
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.12), rgba(139, 92, 246, 0.12));
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.12), rgba(56, 189, 248, 0.12));
   border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
-  color: var(--cyan);
+  color: var(--electric-teal);
   margin-bottom: 1.25rem;
 }
 
@@ -1077,7 +1089,7 @@ section {
   content: '›';
   position: absolute;
   left: 0;
-  color: var(--cyan);
+  color: var(--electric-teal);
   font-weight: 700;
   font-size: 1.1rem;
 }
@@ -1168,12 +1180,12 @@ section {
 
 .footer__logo::before {
   content: '<';
-  color: var(--cyan);
+  color: var(--electric-teal);
 }
 
 .footer__logo::after {
   content: '/>';
-  color: var(--cyan);
+  color: var(--electric-teal);
 }
 
 .footer__description {
@@ -1210,13 +1222,13 @@ section {
 
 .footer__links ul li a:hover,
 .footer__contact ul li a:hover {
-  color: var(--cyan);
+  color: var(--electric-teal);
   transform: translateX(3px);
 }
 
 .footer__contact ul li a i {
   width: 18px;
-  color: var(--cyan);
+  color: var(--electric-teal);
 }
 
 .footer__bottom {
@@ -1242,7 +1254,7 @@ section {
 }
 
 .footer__bottom a:hover {
-  color: var(--cyan);
+  color: var(--electric-teal);
   transform: translateY(-2px);
 }
 
@@ -1567,7 +1579,7 @@ section {
    FOCO VISÍVEL
    ============================================ */
 :focus-visible {
-  outline: 2px solid var(--cyan);
+  outline: 2px solid var(--electric-teal);
   outline-offset: 2px;
 }
 
@@ -1581,7 +1593,7 @@ section {
 
 .form__success-icon {
   font-size: 3rem;
-  color: var(--cyan);
+  color: var(--electric-teal);
   margin-bottom: 1rem;
 }
 
